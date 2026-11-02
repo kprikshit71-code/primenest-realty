@@ -75,7 +75,7 @@
       "locality": "Powai",
       "purpose": "Rent",
       "type": "Studio",
-      "price": 29,
+      "price": 28,
       "bedrooms": 1,
       "bathrooms": 1,
       "area": 480,
@@ -83,8 +83,7 @@
       "featured": false,
       "description": "Minimal, efficient studio designed for flexible city living.",
       "image": "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1100&q=80",
-      "createdAt": "2026-10-23T10:00:00.000Z",
-      "updatedAt": "2026-11-01T11:54:04.122Z"
+      "createdAt": "2026-10-23T10:00:00.000Z"
     },
     {
       "id": "PN106",
