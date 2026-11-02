@@ -112,4 +112,6 @@ const server=http.createServer(async(req,res)=>{
  fs.readFile(file,(err,data)=>{if(err){res.writeHead(404);return res.end('Not found');}res.writeHead(200,{'Content-Type':contentTypes[path.extname(file)]||'application/octet-stream'});res.end(data);});
  }catch(e){console.error(e);if(!res.headersSent)error(res,e.message==='Invalid JSON'?400:500,e.message==='Invalid JSON'?'Invalid JSON':'Server error');}
 });
-server.listen(PORT,()=>console.log(`PrimeNest Realty running at http://localhost:${PORT}`));
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`PrimeNest Realty running on port ${PORT}`);
+});
